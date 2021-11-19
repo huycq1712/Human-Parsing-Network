@@ -18,3 +18,4 @@ from .dukemtmc import DukeMTMC as dukemtmc
 from .cuhk03 import CUHK03 as cuhk03
 from .atr import ATR as atr
 from .viper import VIPeR as viper
+from .vnpersonsearch3k import VNpersonsearch3k as vnpersonsearch3k
