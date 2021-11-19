@@ -67,7 +67,7 @@ class VNpersonsearch3k(BaseDataset):
         name = item["file_path"]
 
         image = cv2.imread(os.path.join(
-            self.root, 'vn_person_search_3k', name),
+            self.root, 'vn_person_search_3k','images', name),
             cv2.IMREAD_COLOR)
         size = image.shape[:-1]
 
