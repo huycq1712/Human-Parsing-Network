@@ -1,3 +1,9 @@
+# ------------------------------------------------------------------------------
+# Copyright (c) Microsoft
+# Licensed under the MIT License.
+# Written by Ke Sun (sunk@mail.ustc.edu.cn)
+# ------------------------------------------------------------------------------
+
 import os
 import json
 import cv2
@@ -61,7 +67,7 @@ class VNpersonsearch3k(BaseDataset):
         name = item["file_path"]
 
         image = cv2.imread(os.path.join(
-            self.root, 'cuhk-pedes', 'imgs', name),
+            self.root, 'vn_person_search_3k', 'imgs', name),
             cv2.IMREAD_COLOR)
         size = image.shape[:-1]
 
