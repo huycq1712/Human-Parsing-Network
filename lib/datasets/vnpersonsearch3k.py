@@ -199,7 +199,7 @@ class VNpersonsearch3k(BaseDataset):
 
             save_img = Image.fromarray(pred)
             save_img.putpalette(palette)
-            dataset_name, file_name = name[i].split('/')
+            dataset_name, file_name = '/'.join(name.split('/')[:-1]), name.split('/')[-1]
             file_name = file_name.split('.')[0]
             path = os.path.join(sv_path, dataset_name)
             mkdir(path)
